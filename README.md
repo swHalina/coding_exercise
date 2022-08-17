@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./assets/Pink Butterflies.gif" width="30px"> Coding Exercixe <img src="./assets/Pink Butterflies.gif" width="30px"></h1>
+<h1 align="center"><img src="./assets/Pink Butterflies.gif" width="30px"> Coding exercise <img src="./assets/Pink Butterflies.gif" width="30px"></h1>
 <p align="center">keep improving!</p>
 
 ## ✨Latest Updates
