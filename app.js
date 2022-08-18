@@ -1,5 +1,5 @@
 /*
-    Developer Name: Maria Lucian Suarez Villanueva
+    Developer Name: Oscar Antonio Bonelli Nasta
     Date of development: August 17th, 2022
     Purpose: This script can iterate an array of object and add the execution date to each object, 
     show only active ones,
@@ -19,17 +19,17 @@ const getData = async () => {
         const peticion = await fetch(url);
         const data = await peticion.json();
 
-        let users = data.usuarios;
+        const users = data.usuarios;
 
         // Select one of the following properties: "name", "movie", "date" with which you want to filter the list.
-        let property = "name";
+        let property = "movie";
 
         // Select one of the following properties: "Active" for active users or "Inactive" for inactive users list.
         let status = "Active";
 
 
         // Iterate the array to add the execution date and select active ones
-        let activeObject = [];
+        const activeObject = [];
         users.forEach(object => {
             object['Date'] = Date();
             if (object['Status'] === status) {
@@ -66,7 +66,8 @@ const getData = async () => {
             console.log(activeObject.sort(orderByProperty(property)));
         }
 
-    }, 1000)
+        clearInterval(setTimeout);
+    }, 5000)
 
 }
 
